@@ -1,11 +1,17 @@
 from bank_account import BankAccount
 from savings_account import SavingsAccount
-
+from checking_account import CheckingAccount
 
 def main():
     print("-----------Scenario 1-----------")
-    # Put your checking here
-
+    ba1 = CheckingAccount("Bank Account 1", 1000000, 67, 678910, 109876, 5000)
+    ba1.deposit(1000)
+    ba1.print_customer_information()
+    ba1.withdraw(1000)
+    ba1.print_customer_information()
+    ba1.withdraw(10000)
+    ba1.deposit(10000)
+    ba1.print_customer_information()
 
     print("-----------Scenario 2-----------")
     ba2 = SavingsAccount("Medina Savings", 200, 190,54321,12345,.02)
