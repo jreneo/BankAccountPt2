@@ -2,13 +2,16 @@ class BankAccount:
 
     bank_title = "ITSC-3155 Bank"
 
-    def __init__(self, name, balance, min_bal):
+    def __init__(self, name, balance, min_bal, routing_number, account_number):
         self.customer_name = name
         self.current_balance = balance
         self.minimum_balance = min_bal
         print("Initializing Bank Account")
 
-    def deposit(self, amount):
+        self._routing_number = routing_number
+        self.__account_number = account_number
+
+def deposit(self, amount):
         self.current_balance += amount
 
     def withdraw(self, amount):
