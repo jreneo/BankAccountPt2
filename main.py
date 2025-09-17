@@ -11,7 +11,7 @@ class BankAccount:
         self.__account_number = account_number
 
 def deposit(self, amount):
-        self.current_balance += amount
+    self.current_balance += amount
 
     def withdraw(self, amount):
         if self.current_balance - amount < self.minimum_balance:
