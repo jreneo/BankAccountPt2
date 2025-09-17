@@ -2,8 +2,8 @@ from main import BankAccount
 
 
 class SavingsAccount(BankAccount):
-    def __init__(self, name, balance, min_bal, interest):
-        super().__init__(name, balance, min_bal)
+    def __init__(self, name, balance, min_bal, routing_number, account_number, interest):
+        super().__init__(name, balance, min_bal, routing_number, account_number)
         self.interest = interest
 
     def add_interest(self, interest):

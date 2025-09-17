@@ -1,30 +1,4 @@
-class BankAccount:
-
-    bank_title = "ITSC-3155 Bank"
-
-    def __init__(self, name, balance, min_bal, routing_number, account_number):
-        self.customer_name = name
-        self.current_balance = balance
-        self.minimum_balance = min_bal
-        print("Initializing Bank Account")
-
-        self._routing_number = routing_number
-        self.__account_number = account_number
-
-    def deposit(self, amount):
-        self.current_balance += amount
-
-    def withdraw(self, amount):
-        if self.current_balance - amount < self.minimum_balance:
-            print("Balance cannot fall below minimum balance.")
-        else:
-            self.current_balance -= amount
-
-    def print_customer_information(self):
-        print("Bank Title: " + self.bank_title)
-        print("Customer Name: " + str(self.customer_name))
-        print("Minimum Balance: " + str(self.minimum_balance))
-        print("Current Balance: " + str(self.current_balance) + "\n")
+from bank_account import BankAccount
 
 def main():
     ba1 = BankAccount("Medina Checking", 676767, 999999)
