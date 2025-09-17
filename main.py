@@ -10,8 +10,8 @@ class BankAccount:
         self._routing_number = routing_number
         self.__account_number = account_number
 
-def deposit(self, amount):
-    self.current_balance += amount
+    def deposit(self, amount):
+        self.current_balance += amount
 
     def withdraw(self, amount):
         if self.current_balance - amount < self.minimum_balance:
