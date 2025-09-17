@@ -6,6 +6,7 @@ class BankAccount:
         self.customer_name = name
         self.current_balance = balance
         self.minimum_balance = min_bal
+        print("Initializing Bank Account")
 
     def deposit(self, amount):
         self.current_balance += amount
